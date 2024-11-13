@@ -1,10 +1,11 @@
-import './Footer.css'
+import React from 'react';
+import './Footer.css';
 
-function Footer() {
+const Footer = () => {
   return (
-    <footer>
-      <p>&copy; 2024 Larissa Mendes</p>
-    </footer>
+    <div className="footer">
+      <p>&copy; 2024 My Portfolio</p>
+    </div>
   );
 }
 

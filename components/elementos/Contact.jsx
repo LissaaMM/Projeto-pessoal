@@ -1,19 +1,12 @@
-import './Contact.css'
+import React from 'react';
+import './Contact.css';
 
-function Contact() {
+const Contact = () => {
   return (
-    <section id="contact">
-      <h2>Contato</h2>
-      <form>
-        <label>Nome:</label>
-        <input type="text" name="name" required />
-        <label>Email:</label>
-        <input type="email" name="email" required />
-        <label>Mensagem:</label>
-        <textarea name="message" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+    <div className="contact">
+      <h1>Contact</h1>
+      <p>This is the contact page content.</p>
+    </div>
   );
 }
 

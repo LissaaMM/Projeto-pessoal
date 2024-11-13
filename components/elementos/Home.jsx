@@ -1,11 +1,11 @@
-import './Home.css'
+import React from 'react';
+import './Home.css';
 
-function Home() {
+const Home = () => {
   return (
-    <section id="home">
-      <h1>Olá, eu sou Larissa Mendes</h1>
-      <p>Desenvolvedora de Sistemas e Estudante</p>
-    </section>
+    <div className="home">
+      <h1>Welcome to My Portfolio</h1>
+    </div>
   );
 }
 

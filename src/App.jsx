@@ -1,20 +1,24 @@
-import Header from '../components/elementos/Header';
-import Home from '../components/elementos/Home';
-import About from '../components/elementos/About';
-import Projects from '../components/elementos/Projects';
-import Contact from '../components/elementos/Contact';
-import Footer from '../components/elementos/Footer';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
+import Projects from './components/Projects/Projects';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/projects" component={Projects} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -1,24 +1,25 @@
-header {
-   background-color: #ff8c94;
-   height: 62px;
-   padding: 0 5%;
-   width: 90%;
-   position: absolute;
-   z-index: 1000;
-  }
-  
-  header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  header nav ul li {
-    margin: 0 1rem;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+.header {
+  background-color: #333;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header nav ul li a:hover {
+  text-decoration: underline;
+}

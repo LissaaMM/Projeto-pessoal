@@ -1,11 +1,12 @@
+import React from 'react';
 import './About.css';
 
-function About() {
+const About = () => {
   return (
-    <section id="about">
-      <h2>Sobre Mim</h2>
-      <p>Detalhes sobre suas habilidades e experiência.</p>
-    </section>
+    <div className="about">
+      <h1>About Me</h1>
+      <p>This is the about page content.</p>
+    </div>
   );
 }
 

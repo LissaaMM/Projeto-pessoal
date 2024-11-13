@@ -1,17 +1,11 @@
-import './Projects.css'
+import React from 'react';
+import './Projects.css';
 
-function Projects() {
+const Projects = () => {
   return (
-    <section id="projects">
-      <h2>Projetos</h2>
-      <div className="project-gallery">
-        {/* Exemplo de projeto */}
-        <div className="project-item">
-          <h3>Projeto 1</h3>
-          <p>Descrição do Projeto 1.</p>
-        </div>
-      </div>
-    </section>
+    <div className="projects">
+      <h1>My Projects</h1>
+    </div>
   );
 }
 
